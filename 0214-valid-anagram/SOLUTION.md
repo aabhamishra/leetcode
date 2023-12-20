@@ -1,7 +1,7 @@
 # Logistics
 Attempt date: 20 December 2023
-Runtime: 4 ms
-Memory: 41.5 MB
+|| Runtime: 4 ms
+|| Memory: 41.5 MB
 
 # Intuition
 <!-- Describe your first thoughts on how to solve this problem. -->
