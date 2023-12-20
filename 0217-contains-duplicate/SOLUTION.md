@@ -1,21 +1,37 @@
-<h2><a href="https://leetcode.com/problems/contains-duplicate/">217. Contains Duplicate</a></h2><h3>Easy</h3><hr><div><p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
+# Logistics
+Attempt date: 20 December 2023
+Runtime: 10 ms
+Memory Usage: 54.6 MB
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-<pre><strong>Input:</strong> nums = [1,2,3,1]
-<strong>Output:</strong> true
-</pre><p><strong class="example">Example 2:</strong></p>
-<pre><strong>Input:</strong> nums = [1,2,3,4]
-<strong>Output:</strong> false
-</pre><p><strong class="example">Example 3:</strong></p>
-<pre><strong>Input:</strong> nums = [1,1,1,3,3,4,3,2,4,2]
-<strong>Output:</strong> true
-</pre>
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+# Intuition
+<!-- Describe your first thoughts on how to solve this problem. -->
+While searching for duplicates, hashset is the immediate 
+first choice because of reduced lookup time complexity.
+# Approach
+<!-- Describe your approach to solving the problem. -->
+1. Create an empty hash set with an Integer type. 
+2. Loop over each element in the array. If the hashset already contains this element, return `true`. Else, add the element to the set.
+3. After the loop, return `false`, as this depicts the case that all elements have been looped over without finding any duplicates.
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-</ul>
-</div>
+
+# Complexity
+- Time complexity: O(n)
+<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+- Space complexity: O(n)
+<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+
+
+# Code
+```
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        HashSet set = new HashSet<Integer>();
+        for(int i : nums) {
+            if(set.contains(i)) return true;
+            set.add(i);
+        }
+
+        return false;
+    }
+}
+```​
