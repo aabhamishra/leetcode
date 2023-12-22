@@ -1,3 +1,8 @@
+# Logistics
+Attempt date: 22 December 2023
+Runtime: 1 ms
+Memory Usage: 41.4 MB
+
 # Intuition and Approach
 The problem talks about dividing the String into two parts, the left and right substrings. 
 
