@@ -1,7 +1,7 @@
 # Logistics
-Attempt date: 23 December 2023
-Runtime: 1 ms
-Memory Usage: 41.94 MB
+Attempt date: 24 December 2023
+Runtime: 2 ms
+Memory Usage: 43 MB
 
 # Intuition
 The question asks us to count minimum operations to create an alternating String. Now, there are only two variations of a binary alternating string:
