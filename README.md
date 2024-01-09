@@ -2,13 +2,15 @@
 
 Welcome to my LeetCode problem-solving repository! 🚀 
 
-Here, you'll find my daily attempts and solutions to various coding challenges from LeetCode.
+Here, you'll find my daily attempts and solutions to various coding problems from LeetCode. There's a mix of Blind 75 problems, daily challenges, and random picks. 
 
 ## About
 
 This repository serves as a comprehensive log of my journey through LeetCode, maintaining a daily discipline of solving at least one problem. It captures my solutions in different programming languages along with detailed explanations. 
 
-Browse through the folders to discover solutions to specific problems. Each problem directory is organized with the following structure:
+Here's a Google Sheets tracker to view problem details more comprehensively: [Leetcode Daily Dive](https://docs.google.com/spreadsheets/d/1oJ0PmvIlxgIzH6oE2ROd8KFr4wDH1GXZfoprRPQaxS0/edit?usp=sharing)
+
+Browse through this repo's folders to discover solutions to specific problems. Each problem directory is organized with the following structure:
 
 - **Question:** The original problem statement.
 - **Code:** Solutions in various programming languages (Python, Java, etc.).
@@ -32,6 +34,6 @@ If you spot any improvements or have alternative solutions, feel free to contrib
 Let's connect and discuss coding, algorithms, and problem-solving! Feel free to reach out:
 
 - LinkedIn: [Aabha Mishra](https://www.linkedin.com/in/aabhamishra/)
-- Google Sheets Tracker: [Leetcode Daily Dive](https://docs.google.com/spreadsheets/d/1oJ0PmvIlxgIzH6oE2ROd8KFr4wDH1GXZfoprRPQaxS0/edit?usp=sharing)
+
 
 Happy coding! 🌐💻
