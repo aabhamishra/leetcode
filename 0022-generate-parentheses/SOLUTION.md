@@ -19,7 +19,8 @@ The time complexity is determined by the number of recursive calls made. At each
 The space complexity is primarily influenced by the depth of the recursion stack. In the worst case, the maximum depth of the recursion is `2n` (when both open and close counts reach `n`). Therefore, the space complexity is O(2N), where N is the given input `n`.
 
 ## Code
-```
+**Python**
+```python
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         # stack = []
@@ -40,4 +41,35 @@ class Solution:
         return res
         
             
+```
+**Java**
+```java
+class Solution {
+
+    List<String> res = new ArrayList();
+    int total;
+
+    public List<String> generateParenthesis(int n) {
+        // dynamic programming
+        total = n;
+        dfs(0, 0, "");
+        return res;
+    }
+
+
+    private void dfs(int open, int closed, String str) {
+        if(open == closed && open == total) {
+            res.add(str);
+            return;
+        }
+
+        if(open < total) {
+            dfs(open+1, closed, str+"(");
+        }
+
+        if(closed < open) {
+            dfs(open, closed+1, str+")");
+        }
+    }
+}
 ```
